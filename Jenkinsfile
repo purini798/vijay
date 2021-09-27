@@ -17,5 +17,12 @@ pipeline
         sh 'touch vijay2.txt'
       }
     }
+    stage ('vijay3 file')
+    {
+      steps
+      {
+        sh 'touch vijay3.txt'
+      }
+    }
   }
 }
