@@ -17,5 +17,19 @@ steps
 sh 'touch rudra2.txt'   
 }
 }
+  stage ('rudra3 file')
+{
+steps
+{
+sh 'touch rudra3.txt'    
+}
+}
+  stage ('rudra4 file')
+{
+steps
+{
+sh 'touch rudra4.txt'    
+}
+}
 }
 }
