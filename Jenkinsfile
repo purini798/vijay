@@ -7,7 +7,7 @@ stage ('cloning clode from github')
 {
 steps
 {
-sh 'touch aa16'    
+sh 'manuplate aa18'    
 }
 }
 stage ('touch aa12')
