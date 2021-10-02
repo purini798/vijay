@@ -17,5 +17,12 @@ pipeline
         sh 'touch babu2.txt'
       }
       }
+      stage ("creating a babu3 file")
+    {
+      steps
+      {
+        sh 'touch babu3.txt'
+      }
+      }
   }
 }
