@@ -7,14 +7,14 @@ pipeline
     {
       steps
       {
-        sh 'touch babu1.txt
+        sh 'touch babu1.txt'
       }
       }
      stage ("creating a file")
     {
       steps
       {
-        sh 'touch babu2.txt
+        sh 'touch babu2.txt'
       }
       }
   }
