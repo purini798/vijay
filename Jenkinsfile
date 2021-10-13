@@ -1,7 +1,8 @@
 pipeline {
     agent any
     stages {
-            parallel {
+            stage {
+			parallel {
                 stage('stage one') {
                     agent {
                         label "stageonebranch"
@@ -29,4 +30,6 @@ pipeline {
             }
         }
     }
+}
+
 }
