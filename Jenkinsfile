@@ -1,8 +1,17 @@
 pipeline {
     agent any
     stages {
-            stage {
-			parallel {
+        stage('NORMAL Stage') {
+            steps {
+                echo 'I am one'
+            }
+        }
+        stage('Parallel Stage') {
+            when {
+                branch 'master'
+            }
+            failFast true
+            parallel {
                 stage('stage one') {
                     agent {
                         label "stageonebranch"
@@ -31,5 +40,4 @@ pipeline {
         }
     }
 }
-
 }
