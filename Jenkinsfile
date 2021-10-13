@@ -1,16 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('NORMAL Stage') {
-            steps {
-                echo 'I am one'
-            }
-        }
-        stage('Parallel Stage') {
-            when {
-                branch 'main'
-            }
-            failFast true
             parallel {
                 stage('stage one') {
                     agent {
